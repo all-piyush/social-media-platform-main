@@ -11,7 +11,6 @@ const Usercomment = (props) => {
   const{posts,setposts,author,setrefreshtrigger}=props;
   const api_url=process.env.REACT_APP_API_URL;
   const selectedpost=posts.filter(p=>p._id===id);
-  console.log("selecr",selectedpost);
   const hearthandle=async(id,mainpost) =>{ 
       if(mainpost.likes.likedby.some((p)=>p===author._id)){
         const response=await fetch(`${api_url}/api/v1/removelike`,{

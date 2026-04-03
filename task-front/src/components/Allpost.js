@@ -10,7 +10,6 @@ const Allpost = (props) => {
     const {posts,setposts,refreshtrigger,author,mode,loggedin}=props;
     const filteredposts=mode==="myposts"?(posts.filter(p=>p.userid===author._id)):(posts);
     
-    console.log(posts);
     async function getallposts() {
         try{
             const response=await fetch(`${api_url}/api/v1/allposts`,{

@@ -4,7 +4,6 @@ import {Outlet, useNavigate} from 'react-router-dom';
 import './UserPost.css'
 const UserPost = (props) => {
   const{liked,setliked,refreshtrigger,setrefreshtrigger,author ,setmode,loggedin,setisloggedin}=props;
-  console.log(author);
   const navigate=useNavigate();
   const[submitting,setsubmitting]=useState(false);
   const api_url=process.env.REACT_APP_API_URL;

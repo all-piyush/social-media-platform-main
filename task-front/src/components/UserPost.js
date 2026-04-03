@@ -81,7 +81,7 @@ const UserPost = (props) => {
             <div id='heading-buttons'>
                 <button onClick={handleallposts}>All Posts</button>
                 <button onClick={handlemyposts}>My Posts</button>
-                <button onClick={handlelogout} className='logout'>{loggedin ? 'Logout' : 'Login'}</button>
+                <button onClick={handlelogout} className='login-button'>{loggedin ? 'Logout' : 'Login'}</button>
             </div>
         </div>
         <textarea placeholder="Whats's On Your Mind?" value={textarea} onChange={changetext}></textarea>

@@ -10,7 +10,7 @@ app.use(cookieparser());
 
 app.use(cors({
 
-  origin:['http://localhost:3000',"https://task-six-smoky-73.vercel.app"], 
+  origin:['http://localhost:3000',"https://social-media-platform-frontend-eta.vercel.app"], 
   credentials: true,               
 }));
 app.use(fileupload({

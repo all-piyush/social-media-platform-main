@@ -38,6 +38,10 @@
     cursor: pointer;
     border-radius: 0.5rem;
 }
+#heading-buttons .login-button{
+    background-color: #90ee90;
+    color: black;
+}
 #post textarea{
     padding: 0.5rem;
     font-size: 1rem;

@@ -15,7 +15,8 @@ exports.login=async(req,res)=>{
         if(ispasswordcorrect){
             const payload={email:exists.email,name:exists.name,_id:exists._id};
             const token=await jwt.sign(payload,process.env.JWT_SECRET,{expiresIn:'1d'});
-            const options={expires:new Date(Date.now()+24*60*60*1000),httpOnly:true,sameSite:'None',secure:true,path:'/'};
+            const options={expires:new Date(Date.now()+24*60*60*1000),httpOnly:true,
+        sameSite:process.env.NODE_ENV==='production'?"None":"Lax",secure:process.env.NODE_ENV==='production'};
             return res.cookie("token",token,options).status(200).json({
                 message:"User Logged In Successfully",
                 success:true,
@@ -50,7 +51,8 @@ exports.signup=async(req,res)=>{
 
         const payload={email:email,name:name,_id:newuser._id};
             const token=await jwt.sign(payload,process.env.JWT_SECRET,{expiresIn:'1d'});
-            const options={expires:new Date(Date.now()+24*60*60*1000),httpOnly:true,sameSite:'None',secure:true,path:'/'};
+            const options={expires:new Date(Date.now()+24*60*60*1000),httpOnly:true,
+        sameSite:process.env.NODE_ENV==='production'?"None":"Lax",secure:process.env.NODE_ENV==='production'};
             return res.cookie("token",token,options).status(200).json({
                 message:"User Logged In Successfully",
                 success:true,

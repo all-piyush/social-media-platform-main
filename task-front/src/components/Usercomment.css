@@ -1,0 +1,118 @@
+#selectedpost-cards{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.post-card-comment{
+    padding: 1rem;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin-bottom:2rem;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    height: max-content;
+    break-inside: avoid;
+    border-radius: 1rem;
+    align-self: center;
+}
+.post-card-comment .profile{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap:0.4rem;
+}
+.post-card-comment .profile .user-icon{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.post-card-comment .date{
+    margin-top: -0.8rem;
+    font-size: 0.9rem;
+}
+.post-card-comment img{
+    align-self: center;
+    height: 12rem;
+    width: 11rem;
+}
+.post-card-comment .text{
+    font-size: 1.2rem;
+}
+.post-card-comment .interaction{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.post-card-comment .interaction button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.post-card-comment .interaction button .heart,.post-card-comment .interaction button .comments{
+    height: 20px;
+    width: 20px;
+    
+}
+.post-card-comment .interaction button .count{
+    margin-left: 0.2rem;
+    font-size: 1.2rem;
+    color: red;
+}
+.post-card-comment .interaction button .redheart{
+    color: red;
+    height: 20px;
+    width: 20px;
+}
+#selectedpost-cards #comment-text{
+    position: relative;
+}
+#selectedpost-cards input{
+    height: 2rem;
+    width: 18rem;
+    padding: 0.3rem;
+}
+
+#comment-text #icon{
+    position: absolute;
+    font-size: 1.5rem;
+    right: 0.4rem;
+    bottom: 1.5rem;
+}
+#comment-text button{
+    cursor: pointer;
+}
+.comment-card{
+    padding: 0.5rem;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid black;
+}
+.comment-card .comment-user{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap:0.4rem;
+
+}
+.comment-card .comment-user .usericon{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    display: flex;
+    flex-shrink: 0;
+}
+.comment-card .comment-text{
+    margin-top: -0.4rem;
+}

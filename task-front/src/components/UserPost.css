@@ -1,0 +1,84 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+}
+#post{
+    padding: 1rem;
+    margin:1rem 0;
+    width: 85vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    background-color:white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+#post-top{
+    display: flex;
+    justify-content: space-between;
+}
+#post-top #heading{
+    font-weight: bold;
+    color: #333333;
+}
+#post-top #heading-buttons{
+    display: flex;
+    gap:0.5rem;
+}
+#heading-buttons button,#post-end button{
+    height: 2rem;
+    width: 4.5rem;
+    background-color: #0288D1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+#post textarea{
+    padding: 0.5rem;
+    font-size: 1rem;
+    height: 5rem;
+}
+#post-end{
+    display: flex;
+    justify-content: space-between;
+}
+#post-end input{
+    display: none;
+}
+.input-label{
+    display: flex;
+    align-items: center;
+    gap:0.3rem;
+    cursor: pointer;
+}
+ .input-label .icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.preview-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10rem;
+    width: 10rem;
+}
+#preview-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+#preview-container button{
+    border:none;
+    background-color: #E1F5FE;
+    cursor: pointer;
+}
+@media(min-width:800px){
+    #post{
+        width: 60vw;
+    }
+}

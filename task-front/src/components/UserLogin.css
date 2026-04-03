@@ -1,0 +1,62 @@
+#form{
+    width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#login-form,#signup-form{
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:1rem;
+  align-self: center;
+  background-color: white;
+  min-height: 22rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+#login-form .heading,#signup-form .heading{
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#login-form input,#signup-form input{
+  padding: 0.2rem;
+  height: 2.1rem;
+  width: 20rem;
+  border-radius: 0.3rem;
+  border:1px solid black;
+
+}
+#signup-form .extra,#login-form .extra{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: -0.8rem;
+}
+.extra:hover{
+  color: red;
+}
+#signup-form .submit,#login-form .submit{
+  background-color: black;
+  height: 2.5rem;
+  width: 8rem;
+  border: none;
+  align-self: center;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media(max-width:450px){
+  #login-form input[type='text'],#signup-form input[type='text']{
+  padding: 0.2rem;
+  height: 1.8rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  border:1px solid black;
+}
+}
